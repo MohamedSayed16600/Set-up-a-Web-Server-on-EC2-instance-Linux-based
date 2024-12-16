@@ -1,0 +1,7 @@
+# Ignore database credentials
+*.env
+/config.php
+
+# Ignore temporary files
+*.log
+*.tmp
