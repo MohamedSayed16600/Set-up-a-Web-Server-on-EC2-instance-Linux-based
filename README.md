@@ -1,11 +1,12 @@
 STEPS OF THE PROJECT
+//////////////
 *configuring AWS*
 created security groups, set inboundary rule of port 80 to any ipv4 and port 22 for my ip
 created keypair to ssh into it
 created an EC2 instance with ubuntu as OS
 attached security group and keypair to it
 then opened vagrant and ssh into the EC2 instance
-
+///////////////
 *Installing required packages*
 first sudo apt-get update
 then sudo apt-get install apache2 mysql-server php libapache2-mod-php php-mysql to install necessary p>
@@ -20,7 +21,7 @@ tested by writing http://54.152.82.35 on my web browser and it showed hello worl
 
 created php file containing hello world using command echo "<?php echo 'Hello World!'; ?>" | sudo tee >
 tested by writing http://54.152.82.35 on my web browser and it showed hello world!
-
+///////////////////////
 *configure MySql*
 installed secure using sudo mysql_secure_installation
 logged in using root user sudo mysql -u root -p
@@ -30,7 +31,7 @@ CREATE USER 'web_user'@'localhost' IDENTIFIED BY 'StrongPassword123#';
 GRANT ALL PRIVILEGES ON web_db.* TO 'web_user'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
-
+///////////////////////////////
 *change the website to use the database*
 modified the php file index.php with new user of db to connect to apache server and show the ip
 sudo nano /var/www/html/index.php to open the file
@@ -57,11 +58,11 @@ $conn->close();
 tested by writing http://54.152.82.35 on my web browser and it showed my ip and time
 
 
-
+////////////////////////
 
 github repo link : https://github.com/MohamedSayed16600/Set-up-a-Web-Server-on-EC2-instance-Linux-based
 
-
+////////////////////////
 
 sub-task 3:
 
