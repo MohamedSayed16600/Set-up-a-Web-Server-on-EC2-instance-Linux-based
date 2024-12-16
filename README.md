@@ -15,7 +15,7 @@ sudo systemctl enable apache2
 sudo systemctl start mysql
 sudo systemctl enable mysql
 
-created index.html containing hello world using command echo "<h1>Hello World\!</h1>" | sudo tee /var/>
+created index.html containing hello world using command echo "Hello World\!" | sudo tee /var/>
 tested by writing http://54.152.82.35 on my web browser and it showed hello world!
 
 created php file containing hello world using command echo "<?php echo 'Hello World!'; ?>" | sudo tee >
