@@ -54,3 +54,32 @@ $conn->close();
 ?>
 
 tested by writing http://54.152.82.35 on my web browser and it showed my ip and time
+
+
+
+
+github repo link : https://github.com/MohamedSayed16600/Set-up-a-Web-Server-on-EC2-instance-Linux-based
+
+
+
+sub-task 3:
+
+1- IP address : it's a 32 bit logical address used in layer 3 responsible for end to end encapsulation, it's set either statically or given by DHCP
+there are private IPs for private lANs,WANs and public IPs for internet (public WAN)
+
+2- MAC addresss: it's a 48 bit address printed on ROM , used to identify next hop , it differs from IP because it's layer 2 while IP is a layer 3
+
+3- switches : it's a layer 2 device that only knows the next hop but not the final end, if doesn't know the MAC it floods
+it only learns the neighbouring MACs when they try to send something.
+
+Routers: it's a layer 3 device that knows the next hop and the final end. it doesn't pass broadcasts. it's routing tables either defined statically or by a routing protocol
+
+routing protocols:
+forming the routing tables in the router
+RIP v1 , IGRP : distance vector protocols - interior gateway protocols
+RIP v2 , EIGRP: advanced distance vector protocols - interior gateway protocols
+ISIS, OSPF : link state protocols - interior gateway protocols
+EGP, BGP : exterior gateway protocols
+
+4-inside security group set inboundary rule of port 22, ssh, my IP
+
