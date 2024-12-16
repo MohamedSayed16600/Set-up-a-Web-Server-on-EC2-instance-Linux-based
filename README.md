@@ -1,3 +1,4 @@
+STEPS OF THE PROJECT
 *configuring AWS*
 created security groups, set inboundary rule of port 80 to any ipv4 and port 22 for my ip
 created keypair to ssh into it
